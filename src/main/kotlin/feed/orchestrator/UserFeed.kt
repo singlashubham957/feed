@@ -1,4 +1,3 @@
 package feed.orchestrator
 
-class UserFeed {
-}
+class UserFeed

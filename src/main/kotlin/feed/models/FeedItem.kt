@@ -5,14 +5,14 @@ import java.time.LocalDateTime
 open class FeedItem(
     open val id: String,
     open val text: String,
-    open val createdAt: LocalDateTime,
+    open val createdAt: LocalDateTime
 )
 
 class Post(
     override val id: String,
     override val text: String,
     val userId: String,
-    override val createdAt: LocalDateTime,
+    override val createdAt: LocalDateTime
 ) : FeedItem(id, text, createdAt)
 
 class News(
@@ -22,14 +22,12 @@ class News(
     override val createdAt: LocalDateTime
 ) : FeedItem(id, text, createdAt)
 
-
 data class LocationEvent(
     override val id: String,
     override val text: String,
     val eventName: String,
     override val createdAt: LocalDateTime
-): FeedItem(id, text, createdAt)
-
+) : FeedItem(id, text, createdAt)
 
 enum class NewsTopic {
     SPORTS,

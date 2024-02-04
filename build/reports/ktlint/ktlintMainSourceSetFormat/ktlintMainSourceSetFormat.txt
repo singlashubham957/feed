@@ -1,0 +1,1 @@
+[90m/Users/shubhamsingla/Documents/per_repos/feed/src/main/kotlin/feed/models/[0mFriendships.kt[90m:[0m1[90m:1:[0m File 'Friendships.kt' contains a single class and possibly also extension functions for that class and should be named same after that class 'Friendship.kt' [90m(filename)[0m
