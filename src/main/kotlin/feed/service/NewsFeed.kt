@@ -1,7 +1,8 @@
 package feed.service
 
-import feed.data.friends.NewsDataI
+import feed.data.news.NewsDataI
 import feed.models.News
+import feed.models.NewsTopic
 
 class NewsFeed(
     private val newsData: NewsDataI
@@ -10,7 +11,7 @@ class NewsFeed(
         return newsData.addNews(news)
     }
 
-    fun getNews(locationId: String): List<News> {
-        return newsData.getNews(locationId)
+    fun getNews(topic: NewsTopic): List<News> {
+        return newsData.getNews(topic)
     }
 }
